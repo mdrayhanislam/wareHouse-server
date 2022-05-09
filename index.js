@@ -51,7 +51,7 @@ async function run(){
         res.send(result);
     });
 
-    
+
     }
     finally{
 
@@ -59,6 +59,10 @@ async function run(){
 }
 
 run().catch(console.dir);
+
+app.get('/', (req, res) => {
+res.send('Runnig Assignment')
+})
 
 app.get('/', (req, res) =>{
     res.send('Runnig my website')
